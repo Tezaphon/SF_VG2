@@ -1,5 +1,9 @@
 #include<unihead.hpp>
 
+
+#include<defaultCube.hpp>
+#include<shaderLoader.hpp>
+
 void viewportResize(GLFWwindow* win, int w, int h){
     glViewport(0,0, w, h);
 }
@@ -30,9 +34,8 @@ int main(){
 
     while(!glfwWindowShouldClose(window)){
         processControls(window);
+        float time_since_start = glfwGetTime();
 
-
-        float time_since_start =glfwGetTime();
         glClearColor(1.0f*(cos(time_since_start)+1)/2, 1.0f*(cos(time_since_start+0.5)+1)/2, 1.0f*(cos(time_since_start+1)+1)/2, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
