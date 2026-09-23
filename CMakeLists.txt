@@ -11,5 +11,5 @@ find_package(glfw3 REQUIRED)
 find_package(OpenGL REQUIRED)
 target_link_libraries(SkyFighters glfw OpenGL::GL)
 
-
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/")
 
