@@ -1,0 +1,41 @@
+{
+"version":11,
+"configurePresets":
+[
+{
+"name":"linux-debug",
+"description":"linux-DEBUG project compile config",
+"binaryDir":"1-linux-debug",
+"cacheVariables":{"CMAKE_SYSTEM_NAME":"Linux","CMAKE_BUILD_TYPE":"Debug","CMAKE_EXPORT_COMPILE_COMMANDS":"ON"}
+}
+,
+{
+"name":"linux-release",
+"description":"linux-RELEASE project compile config",
+"binaryDir":"1-linux-release",
+"cacheVariables":{"CMAKE_SYSTEM_NAME":"Linux","CMAKE_BUILD_TYPE":"Release"}
+}
+,
+{
+"name":"windows-debug",
+"description":"windows-DEBUG project compile config",
+"binaryDir":"1-windows-debug",
+"cacheVariables":
+    {
+    "CMAKE_SYSTEM_NAME":"Windows","CMAKE_BUILD_TYPE":"Debug","CMAKE_EXPORT_COMPILE_COMMANDS":"ON",
+    "CMAKE_C_COMPILER":"x86_64-w64-mingw32-gcc","CMAKE_CXX_COMPILER":"x86_64-w64-mingw32-g++"
+    }
+}
+,
+{
+"name":"windows-release",
+"description":"windows-RELEASE project compile config",
+"binaryDir":"1-windows-release",
+"cacheVariables":
+    {
+    "CMAKE_SYSTEM_NAME":"Windows","CMAKE_BUILD_TYPE":"Release",
+    "CMAKE_C_COMPILER":"x86_64-w64-mingw32-gcc","CMAKE_CXX_COMPILER":"x86_64-w64-mingw32-g++"
+    }
+}
+]
+}
